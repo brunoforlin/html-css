@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title> 
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(146, 176, 176);
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 0px;
+            margin-top: 10px;
+            border: 1px;
+            border-color: black;
+            border-radius: 1px;
+            border-style: dashed;
+        }
+        nav{
+            background-color: rgb(141, 139, 139);
+            padding: 2px;
+            box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.363);
+            
+            
+        }
+        nav > a {
+            text-decoration: none;
+            margin-right: 30px;
+            color: black;
+        
+        }
+        nav > a:hover {
+            color: white;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 10px;
+           
+        }
+        article{
+            background-color: darkgray;
+            padding: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.363);
+        }
+        article > aside {
+            background-color: rgb(141, 139, 139);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+<h1> Meu site</h1>
+        <nav>
+            <a href="pagina2.html">primeiro link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos"></section>
+        <p>politica esportes games </p>
+        <section id="noticias"></section>
+        <article>
+            <h2>noticia sobre o brasil</h2>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur ducimus commodi, tempore non a ipsam iure. Reprehenderit earum cum quae deleniti nam harum inventore velit aperiam ipsum ullam? Voluptatibus, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore aperiam, cupiditate similique quod eligendi quisquam consectetur totam itaque quas sequi consequuntur autem quo sint quia velit dicta porro exercitationem voluptatum.</p>
+            <aside> 
+                <p>escrito por fulado dital</p>
+            </aside>
+        </article>
+
+    </main>
+       
+    <footer>
+<p>desenvolvido por forlincompany</p>
+    </footer>
+</body>
+</html>

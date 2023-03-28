@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalzando links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+
+            # = ID
+            . = class
+            : = pseudo-class
+            ::= pseudo-element
+            > = children */
+               
+        a{
+            color: red;
+            text-decoration: none; /*para retirar qualquer sublinhado ou outras coisas*/
+            font-weight: bold;
+        }
+        a:visited{
+            color: brown;
+        }
+        a:hover{
+            color: yellow;
+            text-decoration: underline;
+
+            
+        }
+        .especial{
+            background-color: antiquewhite;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <p><a href="https://github.com/" target="_blank">repositorio github</a></p>
+    <p><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&t=330s" class="especial" target="_blank">canal do youtube</a></p>
+    <p><a href="https://www.cursoemvideo.com/" target="_blank">site do curso em video</a></p>
+</body>
+</html> 

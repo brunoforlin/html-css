@@ -1,0 +1,50 @@
+@charset "UTF-8";
+*{
+    /*height: 100%;*/
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #613d1fb6,#ddb88386)
+}
+main{
+    background-color: white;
+    width: 600px; /*largura, pra nao preencher a tela toda, vc define a largura*/
+    padding: 10px; /*acolchoamento, pra nao grudar a letra no limite da borda*/
+    margin: auto; /* no auto, vai centralizar o main, ou a div, automaticamente no centro*/
+    border-radius: 10px; /*serve para arredondar as bordas retas*/
+    box-shadow: 5px 5px 15px #613d1f6f;
+}
+
+h1{ text-indent: 3px; /* seria o paragrafo*/
+    text-align: center; /* alinhamento do texto, neste caso centralizado*/
+    text-shadow: 1px 1px 1px #293132; /*mesma coisa que o box shadow, da sombra para o texto*/
+    color: #445254;
+}
+h1#principal{
+    background-color: black;
+    color:white;
+
+    /*
+    em HTML ID = em CSS é #
+    em HTML CLASS = em CSS é .(ponto)*/
+}
+h2{
+    color: #552E2B;
+}
+p{
+    text-align: justify;
+    /*font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 16px;
+    font-style: italic;
+    da pra usars uma shorthand. que voce coloca todos os atributos da fonte, nesta sequencia :  
+
+    font-style > font-weight > font-size > font-family*/
+
+    font: italic bolder 16px 'times new roman', times, serif;
+   
+   
+}
+.subclasse {
+    color: aqua;
+}

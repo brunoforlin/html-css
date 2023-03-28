@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subclasses e div</title>
+    <style>
+         div{
+            background-color: lightgray;
+            text-align: center;
+            border: solid black; /*faz uma borda no espaco criado pela div*/
+            height: 200px; /*altura*/
+            width: 200px; /*comprimento ou largura*/
+            display: inline-block; /*no lugar de ficar um abaixo do outro, ele mostra em linha */
+         }
+         div:hover {
+            background-color: yellow;
+            /* os dois pontos (:) signigica que é uma subclasse, e o hover quer dizer que voce "ao passar o mouse em cima faz algo"*/
+         }
+    </style>
+</head>
+
+<body>
+ <div id="01">01</div>
+ <div id="02">02</div>
+ <div>03</div>
+    
+</body>
+</html>
