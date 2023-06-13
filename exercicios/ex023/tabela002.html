@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uso de tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder; 
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+   
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th.popul {
+            width: 25px;
+        }
+
+      tbody > tr:nth-child(2n) {
+        background-color: lightgray;
+      }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+
+    <!-- ANATOMIA DE TABELAS GRANDES COM SEMANTICA 
+            TABLE
+                CAPTION  é o titulo
+                THEAD
+                TR, TD, TH
+                TBODY
+                TR, TD, TH
+                TFOOT
+                TR, TD, TH -->
+ 
+    <table>
+        <caption>
+            população das unidades federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>  <!--/*scope serve para indicar semanticamente pra onde aponta o TH (Q SERVE COMO TITULO, ALGO Q NÃO É DADO, VC USA COL DE COLUNA, ou row de linha) */-->
+                <th scope="col" class="popul">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49.522.443</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">54.546.563</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">54.525.545</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">57.745.534</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">234.654.634</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>234.434.654.764</strong></td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
