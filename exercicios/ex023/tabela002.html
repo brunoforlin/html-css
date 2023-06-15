@@ -20,6 +20,13 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*configuração para poder grudar o th mesmo rolando a pagina */
+        }
+
+        thead > tr > th {
+            position: sticky;
+            background-color: gray;
+            top: -1px;
         }
         th.popul {
             width: 25px;
