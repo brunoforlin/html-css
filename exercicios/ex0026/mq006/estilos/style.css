@@ -44,6 +44,7 @@ menu > ul {
 menu > ul > li > a {
     display: block;
     padding: 10px;
+    color: white;
     text-decoration: none;
     background-color: rgb(70, 70, 70);
     text-align: center;
@@ -51,7 +52,7 @@ menu > ul > li > a {
 }
 
 menu > ul > li > a:hover {
-    background-color: gray;
+    background-color: rgb(86, 86, 86);
 }
 
 main {
